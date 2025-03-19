@@ -1,0 +1,100 @@
+.shopping-container {
+    width: 350px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .input-container {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+  }
+  
+  input {
+    flex: 1;
+    padding: 8px;
+    border: 2px solid #333;
+    border-radius: 5px;
+  }
+  
+  .add-btn {
+    background: #4caf50;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+    background: #f9f9f9;
+    margin-bottom: 8px;
+    border-radius: 5px;
+  }
+  
+  li.bought {
+    background: #e8f5e9;
+    text-decoration: line-through;
+    color: gray;
+  }
+  
+  button {
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 0 3px;
+  }
+  
+  .edit-btn {
+    background: #ffc107;
+    color: black;
+  }
+  
+  .remove-btn {
+    background: #d32f2f;
+    color: white;
+  }
+  
+  .save-btn {
+    background: #4caf50;
+    color: white;
+  }
+  
+  li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+    background: #f9f9f9;
+    margin-bottom: 8px;
+    border-radius: 5px;
+  }
+  
+  li span {
+    flex-grow: 1;
+  }
+  
+  .button-group {
+    display: flex;
+    gap: 5px;
+  }
+  
