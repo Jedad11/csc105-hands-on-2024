@@ -13,39 +13,36 @@ import NotFound from "./pages/NotFoundPage.jsx";
 const router = createBrowserRouter([
   {
     path: "/", // Home route
-    element: <App/>, // Render the App component
-    children:[
+    element: <App />,
+    children: [
       {
-        path:"/",
-        element:<HomePage/>
+        path: "/",
+        element: <HomePage />,
       },
       {
-        path:"/login",
-        element:<LoginPage/>
+        path: "/fav",
+        element: <FavPage />,
       },
       {
-        path:"/fav",
-        element:<FavPage/>,
-        children:[
-          {
-            path:"/favoriteDetail",
-            element:<FavDetailPage/>
-          },
-        ]
-      }
-      
-    ]
+        path: "/fav/:id", // ✅ รองรับ dynamic path เช่น /fav/42
+        element: <FavDetailPage />,
+      },
+    ],
   },
   {
-    path:"/signup",
-    element:<SignUp/>
+    path: "/signup",
+    element: <SignUp />,
   },
   {
-    path:"/*",
-    element:<NotFound/>
+    path: "/login",
+    element: <LoginPage />,
   },
-  
+  {
+    path: "*",
+    element: <NotFound />,
+  },
 ]);
+
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
