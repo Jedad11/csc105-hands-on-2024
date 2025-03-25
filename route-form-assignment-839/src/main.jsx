@@ -1,6 +1,6 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
-import { createBrowserRouter, RouterProvider } from "react-router-dom"; //import these modules
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./index.css";
 import App from "./App.jsx";
 import HomePage from "./pages/HomePage.jsx";
@@ -24,7 +24,7 @@ const router = createBrowserRouter([
         element: <FavPage />,
       },
       {
-        path: "/fav/:id", // ✅ รองรับ dynamic path เช่น /fav/42
+        path: "/fav/:id",
         element: <FavDetailPage />,
       },
     ],
